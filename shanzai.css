@@ -1,0 +1,172 @@
+@font-face {
+ font-family: "shanzai.woff";
+ src: url("shanzai.woff") format("woff");
+}
+
+.parent {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  overflow: auto;
+}
+
+.child {
+  padding: 0.5rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.about {
+	font-family: "shanzai.woff";
+	max-width: 690px;
+	font-size: 1rem;
+}
+
+.heading, .image {
+	text-align: center;
+	padding-bottom: 3%;
+	padding-top: 3%;
+}
+
+.subheading {
+	font-size: 0.6rem;
+	padding-bottom: 3%;
+	padding-top: 6%;
+	color: silver;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.logo {
+	display: flex;
+	flex-direction: row;
+}
+
+.m, .n, .t {
+	margin: 1vh;
+}
+
+img {
+	max-width: 690px;
+}
+
+.content span {
+	text-transform: uppercase;
+	text-align: center;
+	display: block;
+}
+
+.microsoft, .netflix, .theranos {
+	margin-bottom: 50vh;
+}
+
+.marquee {
+	font-family: "shanzai.woff";
+	position: fixed;
+    top: 0;
+    left: 0;
+	height: 30px;
+	width: 100%;
+	background-color: deeppink;
+	--tw:129vw;
+	--ad: 27s;
+}
+
+.marquee span {
+	color: white;
+	display: inline-block;
+	padding-top: 6px;
+	white-space: nowrap;
+	width: var(--tw);
+	text-shadow: var(--tw) 0 white,
+	calc(var(--tw)*2) 0 white,
+	calc(var(--tw)*3) 0 white,
+	calc(var(--tw)*4) 0 white,
+	calc(var(--tw)*5) 0 white,
+	calc(var(--tw)*6) 0 white,
+	calc(var(--tw)*7) 0 white,
+	calc(var(--tw)*8) 0 white;
+	will-change: transform;
+	animation: marquee var(--ad) linear infinite;
+	animation-play-state: running;
+}
+
+@keyframes marquee {
+	0% {transform: translateX(0);}
+	100% {transform: translateX(-100%);}
+}
+
+.ssm, .ssn, .sst {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 50vh;
+}
+
+.content .parent {
+	height: auto;
+}
+
+.want {
+	display: flex;
+	font-family: "shanzai.woff";
+	background-color: white;
+	max-width: 500px;
+	padding: 30px;
+	color: silver;
+	border: 1px solid black;
+}
+
+.add {
+	right: 0;
+	position: fixed;
+	top: 40vh;
+	padding-right: 10px;
+}
+
+.want textarea, input, button {
+	width: 100%;
+    display: inline-block;
+    background-color: silver;
+    height: 40px;
+    margin-bottom: 10px;
+    font-family: "shanzai.woff";
+    color: white;
+    border: none;
+    resize: none;"
+}
+
+label {
+	width: 100%;
+    display: inline-block;
+	background-color: white;
+	padding: 10px 0px 10px 0px;
+}
+
+#want > form > label:nth-child(3) > textarea {
+	height: 120px;
+}
+
+button {
+	margin-top: 10px;
+	background-color: white;
+	text-align: right;
+	color: silver;
+	font-size: 2rem;
+	margin-bottom: 0;
+	padding: 0;
+}
+
+.popup {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    top: 0;
+    background: rgba(0,0,0,.8);
+    display: none;
+  }
