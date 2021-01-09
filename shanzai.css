@@ -127,7 +127,7 @@ img {
 .add {
 	right: 0;
 	position: fixed;
-	top: 40vh;
+	top: calc(50% - 205px);
 	padding-right: 10px;
 }
 
